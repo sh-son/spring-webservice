@@ -1,5 +1,6 @@
-package com.myson.webservice.domain;
+package com.myson.webservice.domain.posts;
 
+import com.myson.webservice.domain.BaseTimeEntity;
 import lombok.AccessLevel;
 import lombok.Builder;
 import lombok.Getter;
@@ -10,7 +11,7 @@ import javax.persistence.*;
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Getter
 @Entity
-public class Posts extends BaseTimeEntity{
+public class Posts extends BaseTimeEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

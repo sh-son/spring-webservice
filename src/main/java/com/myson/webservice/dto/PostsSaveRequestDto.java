@@ -1,6 +1,6 @@
 package com.myson.webservice.dto;
 
-import com.myson.webservice.domain.Posts;
+import com.myson.webservice.domain.posts.Posts;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

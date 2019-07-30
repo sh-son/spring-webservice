@@ -1,6 +1,6 @@
 package com.myson.webservice.web;
 
-import com.myson.webservice.PostsService.PostsService;
+import com.myson.webservice.service.PostsService;
 import com.myson.webservice.dto.PostsSaveRequestDto;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;

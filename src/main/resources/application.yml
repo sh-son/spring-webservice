@@ -1,11 +1,6 @@
 spring:
- h2:
-   console:
-     enabled: true
-     path: /h2-console
-
- profiles:
-   active: local # 기본 환경 선택
+  profiles:
+    active: local # 기본 환경 선택
 
 # local 환경
 ---

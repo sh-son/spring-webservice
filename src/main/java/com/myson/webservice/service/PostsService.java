@@ -1,8 +1,8 @@
-package com.myson.webservice.PostsService;
+package com.myson.webservice.service;
 
 
 import com.myson.webservice.dto.PostsMainResponseDto;
-import com.myson.webservice.domain.PostsRepository;
+import com.myson.webservice.domain.posts.PostsRepository;
 import com.myson.webservice.dto.PostsSaveRequestDto;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
