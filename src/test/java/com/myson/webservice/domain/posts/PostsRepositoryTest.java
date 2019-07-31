@@ -66,7 +66,7 @@ public class PostsRepositoryTest {
         assertTrue(posts.getModifiedDate().isAfter(now));
     }
 
-    @Test
+/*    @Test
     @Transactional(readOnly = true)
     public void 역순_정렬_가져오기() {
         //when
@@ -77,5 +77,5 @@ public class PostsRepositoryTest {
         //then
         PostsMainResponseDto postsMainResponseDto = postsList.get(0);
         assertEquals(postsMainResponseDto.getId(), Long.valueOf(2));
-    }
+    }*/
 }
