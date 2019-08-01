@@ -2,20 +2,18 @@ language: java
 jdk:
   - openjdk8
 
+# Travis CI 서버의 Home
 branches:
   only:
     - master
-
-# Travis CI 서버의 Home
 cache:
   directories:
-    - '$HOME/.m2/repository'
-    - '$HOME/.gradle'
+    - "$HOME/.m2/repository"
+    - "$HOME/.gradle"
 
 script: "./gradlew clean build"
 
-# CI 실행 완료시 메일로 알람
+# CI 실행 완료시 메일로 알람 (Slack)
 notifications:
-  email:
-    recipients:
-      pg-sh@naver.com
+  slack:
+    secure: OFpepuFTZC2bv/UMk3LPm9haZZsCUGBvoFS3JsluuO7I8z1zOBLWBytE1K48F0HC6C0UmauDLjvUUajBMEs9K0qkZYNliEwyr2qWchw2vvbyHxXio7WwQNZVtjE4Hb8eWp/gVeb/3q/0sj7fP5CVqOIZ7H6v3s23ww6PyOlp7Y8UqIw59j+0BmO8HmXDvYweXjX7lRMAuMrqFBtr0NlqGFgfV9uWqokxaRoBURGFnL1MYhbi7lSw/zftW8tTa8pMUnCXcrwUuzoDv/05iTDm3XsergqblZu+9YX23qa3pdLMYEPq83l+A24NxQaiyaVeiCEVAnIyB6iXn+ak2Zm438Xer9K6M7Ty60mffW4/ER+MIKlYPSmBJdeNoZvsD3OW7Cilt8vK7UGy8ex0noKLr4SQ592ds5eZOoduzwgP9pFq0Y93SeWAiPHtzSrx8GRqY/zm0iEg+43x41EotZ/eWVXJ/opgYq5B5C+lgXx1iFm0NBK/nmEJrCd3h4Xqe2NKciOdNrq/y7B8uhkCsrx1vq29Ti7RF6uKyYTcpR+K6GFWckl05u6NzEfLa8o8o8gTI5oReL7Rr8hwRv3TTzkDaIs7LGPZ27DOMKY2KQlMVLn3aS+/2vSNDhOmJiBFEFjQ7Snk5PrLbTy+IL4i4NOlzNm5gGvvsk2wQg5v55oxmwc=
