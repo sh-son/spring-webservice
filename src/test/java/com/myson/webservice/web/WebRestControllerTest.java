@@ -11,14 +11,14 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 
 
-@RunWith(SpringRunner.class)
-@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
+/*@RunWith(SpringRunner.class)
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)*/
 public class WebRestControllerTest {
 
-    @Autowired
+/*    @Autowired
     private TestRestTemplate restTemplate;
 
-/*    @Test
+    @Test
     public void Profile확인(){
         //when
         String profile = this.restTemplate.getForObject("/profile", String.class);
