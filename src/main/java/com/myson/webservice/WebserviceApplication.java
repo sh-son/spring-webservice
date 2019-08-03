@@ -14,7 +14,7 @@ public class WebserviceApplication {
 
     public static void main(String[] args) {
         new SpringApplicationBuilder(WebserviceApplication.class)
-                .profiles(APPLICATION_LOCATIONS)
+                .properties(APPLICATION_LOCATIONS)
                 .run(args);
     }
 }
