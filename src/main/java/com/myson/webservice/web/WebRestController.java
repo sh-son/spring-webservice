@@ -31,7 +31,7 @@ public class WebRestController {
     @GetMapping("/profile")
     public String getProfile() {
         return Arrays.stream(env.getActiveProfiles())
-                .skip(1)
+                .filter(e -> "set1".equals(e) || "set2".equals(e))
                 .findFirst()
                 .orElse("");
     }
